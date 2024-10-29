@@ -4,7 +4,7 @@ import './Button.css';
 function Button({ onClick, className }) {
 	return (
 		<button onClick={onClick} className={`${className} button`}>
-			Ver otro 🥠
+			Ver otro
 		</button>
 	);
 }

@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { bg1, bg2, bg3, bg4 } from './assets/images/';
 import phrases from './phrases.json';
-import Card from './Components/Card.jsx';
+import Card from '../src/components/Card.jsx';
 import Button from '../src/components/Button.jsx';
 import Heading from '../src/components/Heading.jsx';
 import './App.css';

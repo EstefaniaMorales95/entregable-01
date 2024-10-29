@@ -1,0 +1,60 @@
+.card {
+	width: 100%;
+	aspect-ratio: 16 / 9;
+	background-image: url('rectangle.svg');
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+}
+.car__body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	max-width: 650px;
+	height: 100%;
+	padding: 0 2em;
+}
+
+.phrase {
+	font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	font-size: 1.5rem;
+	text-shadow: 2px 2px 4px rgba(1, 1, 1, 0.6);
+	letter-spacing: 1px;
+	color: #a946a0;
+}
+
+.phrase:hover,
+.author:hover {
+	animation: rebote 0.5s ease-in-out infinite;
+}
+.author {
+	font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	font-size: 1rem;
+}
+
+.clase1,
+.clase2 {
+	color: #c31ab5;
+	font-size: 18px;
+	padding: 10px;
+	transition: transform 0.5s ease-in-out;
+}
+
+.clase1:hover,
+.clase2:hover {
+	animation: rebote 0.5s ease-in-out infinite;
+}
+
+.quote-icon {
+	font-size: 5.5rem;
+	color: #adadad;
+	font-family: serif;
+	margin-left: 200px;
+	display: inline-block;
+	vertical-align: middle;
+	line-height: 0.35;
+	transition: font-size 0.3s ease;
+}

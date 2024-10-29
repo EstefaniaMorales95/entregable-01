@@ -1,0 +1,95 @@
+:root {
+	font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+	line-height: 1.5;
+	font-weight: 400;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+body {
+	margin: 0;
+}
+p {
+	text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	text-wrap: balance;
+}
+img,
+video,
+svg {
+	max-width: 100%;
+	height: auto;
+}
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+button {
+	background: linear-gradient(90deg, #db59d0, #ffffff);
+	color: #0b0b0b;
+	border: none;
+	position: relative;
+	height: 60px;
+	font-size: 1.6em;
+	padding: 0 2em;
+	cursor: pointer;
+	transition: 800ms ease all;
+	outline: none;
+	font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+button:hover {
+	background: linear-gradient(90deg, #ffffff, #c31ab5);
+	color: #131213;
+}
+button:before,
+button:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 2px;
+	width: 0;
+	background: #c31ab5;
+	transition: 400ms ease all;
+}
+button:after {
+	right: inherit;
+	top: inherit;
+	left: 0;
+	bottom: 0;
+}
+button:hover:before,
+button:hover:after {
+	width: 100%;
+	transition: 800ms ease all;
+}
+
+@keyframes rebote {
+	0%,
+	100% {
+		transform: translateY(0);
+	}
+	50% {
+		transform: translateY(-10px);
+	}
+}
